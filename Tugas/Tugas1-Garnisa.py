@@ -29,6 +29,10 @@ print("tinggi saya",Tinggi,end=" cm.")
 print("")
 print("")
 
+#KOREKSI LEBIH EFEKTIF
+text  = "Nama saya (), umur saya () tahun dan tinggi saya () cm. format(nama, umur, tinggi)
+
+print (text)
 
 # ### Nomer 2
 
@@ -39,7 +43,8 @@ print('Nomer 2')
 print("")
 
 r = int(input("Masukkan jari-jari lingkaran dalam cm: "))
-phi = 22/7
+#integer
+phi = 22//7
 luas = phi*r*r
 print("Luas lingkaran dengan jari-jari", r,"cm adalah ", end="")
 print(round(luas, 2), end=" ")
@@ -47,6 +52,20 @@ print("cm""\u00b2", end=".")
 
 print("")
 print("")
+
+text (
+
+#KOREKSI efektif
+def hitung_luas (r):
+    luas = phi*r*r
+    return luas
+
+luas = hitung_luas(r)
+luas2= round(luas,2)
+
+print{"Luas Lingkaran : {r.2f}".format(luas)}
+print{"Luas Lingkaran :{}".format(luas2)}
+
 
 
 # ### Nomer 3
@@ -71,7 +90,25 @@ else:
 print("")
 print("")
 
+#SALAH KOREKSINYA
+nilai_minimum = float(input("Nilai minimum "))
+a = float(input("Nilai ujian teori :"))
+b = float(input("Nilai ujian praktek :"))
 
+if a >= nilai_minimum and b >= nilai_minimum:
+    print("Selamat, anda lulus!")
+elif a >= nilai_minimum and b < nilai_minimum:
+    print("Anda harus mengulang ujian praktek.")  
+elif a < nilai_minimum and b >= nilai_minimum:
+    print("Anda harus mengulang ujian teori.")
+else:
+    print("Anda harus mengulang ujian teori dan praktek.")
+    
+print("")
+print("")    
+    
+    
+    
 # ### Soal Bonus
 
 # In[14]:
